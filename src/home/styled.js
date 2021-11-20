@@ -6,6 +6,7 @@ const Container = styled.div`
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-around;
 
         height: 25em;
         padding: 0em 3em;
@@ -121,6 +122,9 @@ const Container = styled.div`
     }
 
     button{
+        position: fixed;
+        bottom: 2em;
+
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -128,6 +132,15 @@ const Container = styled.div`
 
     button > img {
         width: 3em;
+    }
+
+    [data-anime] {
+        opacity: 0;
+        transition: .3s;
+    }
+
+    [data-anime].animate {
+        opacity: 1;
     }
 
     .footer{

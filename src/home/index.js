@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Container } from "./styled"
 
 export default function Home(){
@@ -5,7 +6,31 @@ export default function Home(){
     const scrollTop = () =>{
         window.scrollTo({top: 0, behavior: 'smooth'});
     };
-    
+
+    const target = document.querySelectorAll('[data-anime]')
+    const animationClass = "animate"
+
+    function animeScroll() {
+        const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+
+        target.forEach(function(element){
+            if((windowTop) > element.offsetTop) {
+                element.classList.add(animationClass)
+            } else {
+                element.classList.remove(animationClass)
+            }
+        })
+    }
+
+    window.addEventListener('scroll', function() {
+        animeScroll()
+    })
+
+    useEffect(() => {
+        animeScroll()
+    })
+
+    // #D6C3F9
 
     return(
         <Container>
@@ -114,7 +139,7 @@ export default function Home(){
                     </div>
                 </div>
                 <div className="align-button">
-                    <button onClick={scrollTop}> <img src="/assets/images/button.svg" alt="button"/> </button>
+                    <button className="" data-anime onClick={scrollTop}> <img src="/assets/images/button.svg" alt="button"/> </button>
                 </div>    
             </div>
             <div className="footer">
