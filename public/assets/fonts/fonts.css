@@ -1,0 +1,36 @@
+/* Font Mukta */
+
+@font-face {
+    font-family: Mukta-bold;
+    src: url("./Mukta/Mukta-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Mukta-semibold;
+    src: url("./Mukta/Mukta-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Mukta-medium;
+    src: url("./Mukta/Mukta-Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Mukta-regular;
+    src: url("./Mukta/Mukta-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Mukta-light;
+    src: url("./Mukta/Mukta-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Mukta-extraLight;
+    src: url("./Mukta/Mukta-ExtraLight.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Mukta-extraBold;
+    src: url("./Mukta/Mukta-ExtraBold.ttf") format('truetype');
+}
