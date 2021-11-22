@@ -24,7 +24,7 @@ const Container = styled.div`
     }
 
     .content-company{
-        width: 14em;
+        width: 15em;
     }
 
     .title-company{
